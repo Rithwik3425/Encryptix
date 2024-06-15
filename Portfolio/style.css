@@ -1,0 +1,464 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: rgb(0, 0, 83);
+}
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}
+::-webkit-scrollbar-thumb {
+  background: blue;
+  border: none;
+  border-radius: 10px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+  width: 100%;
+  height: 60px;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+}
+.navul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.navelements {
+  list-style: none;
+  font-size: 1.1rem;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: url("/Portfolio/bg-image.jpg") no-repeat center center/cover;
+}
+.herocontent {
+  text-align: center;
+}
+.herotitle,
+.herospecialtitle {
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(0, 38, 60);
+  text-align: center;
+}
+.herospecialtitle {
+  font-size: 8rem;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+}
+.herotitlespecial {
+  font-size: 8rem;
+  color: white;
+}
+.herosubtitle {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}
+.herobutton {
+  padding: 10px 20px;
+  font-size: 20px;
+  margin-top: 20px;
+  background-color: rgb(0, 38, 60);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to right, #dbe7f5, #b0c1e0);
+  padding: 10px 100px;
+}
+
+.aboutcontent {
+  width: 800px;
+  text-align: center;
+}
+.aboutimage {
+  width: 433px;
+  height: 433px;
+  background: url("/Portfolio/aboutimage.png") no-repeat center center/cover;
+}
+
+.abouttitle {
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(0, 38, 60);
+  text-align: center;
+}
+
+.aboutcontent p {
+  font-size: 1.2rem;
+  color: rgb(0, 38, 60);
+  margin-top: 20px;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  padding: 60px 80px;
+  background: rgb(0, 38, 60);
+}
+
+.skillstitle {
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(167, 211, 237);
+  text-align: center;
+}
+.skillscontent {
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 26, 41);
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.left {
+  border-radius: 40px;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right {
+  border-radius: 40px;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.figmaimage,
+.upper {
+  border-radius: 40px;
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+.figmaimage {
+  background: url("/Portfolio/figmaimage.jpeg") no-repeat center center/cover;
+}
+.reduxjs,
+.down {
+  border-radius: 40px;
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.reduxjs {
+  background: url("/Portfolio/reduxjsimage.jpeg") no-repeat center center/cover;
+}
+
+.upup,
+.updwn {
+  border-radius: 40px;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.nextjs,
+.reactjs {
+  border-radius: 40px;
+  width: 70%;
+  height: 100%;
+}
+
+.reactjs {
+  background: url("/Portfolio/reactjsimage.png") no-repeat center center/cover;
+}
+.nextjs {
+  background: url("/Portfolio/nextjsimage.webp") no-repeat center center/cover;
+}
+.js,
+.flutter {
+  border-radius: 40px;
+  width: 30%;
+  height: 100%;
+}
+
+.flutter {
+  background: url("/Portfolio/flutterimage.png") no-repeat center center/cover;
+}
+.js {
+  background: url("/Portfolio/jsimage.png") no-repeat center center/cover;
+}
+.spline,
+.threejs {
+  border-radius: 40px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.spline {
+  background: url("/Portfolio/splineimage.jpeg") no-repeat center center/cover;
+}
+
+.threejs {
+  background: url("/Portfolio/threejsimage.png") no-repeat center center/cover;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  padding: 60px 80px;
+  background: rgb(0, 26, 41);
+}
+.projectscontent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+.card {
+  width: 380px;
+  height: 508px;
+  margin: 0 auto;
+  background-color: #000000;
+  border-radius: 16px;
+  z-index: 1;
+  padding: 16px;
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+}
+
+.circle {
+  padding: 0 4px;
+}
+
+.box {
+  display: inline-block;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: #ff605c;
+}
+
+.yellow {
+  background-color: #ffbd44;
+}
+
+.green {
+  background-color: #00ca4e;
+}
+
+.card__content h1 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 10px 0;
+}
+
+.card__content p {
+  font-size: 1rem;
+  color: #fff;
+  margin: 10px 0;
+}
+
+.lawconnectindia {
+  border-radius: 16px;
+  width: 100%;
+  height: 160px;
+  background: url("/Portfolio/lawconnectindia.png") no-repeat center
+    center/cover;
+}
+.evaultimage {
+  border-radius: 16px;
+  width: 100%;
+  height: 250px;
+  background: url("/Portfolio/evault.png") no-repeat center center/cover;
+}
+
+.projectstitle {
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(167, 211, 237);
+  text-align: center;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  padding: 60px 80px;
+  background: black;
+  gap: 60px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.contacttitle {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+
+.contactcontent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.input {
+  width: 300px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contactinfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.submit {
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: rgb(0, 38, 60);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100px;
+  width: 100%;
+  background: rgb(0, 38, 60);
+  color: white;
+  font-size: 1.2rem;
+  gap: 20px;
+}
+
+.bold {
+  font-weight: 700;
+  color: white;
+}
+
+.footercontent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}

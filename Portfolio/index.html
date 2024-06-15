@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/431246f244.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/Portfolio/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">RITHWIK CHIMMANI</div>
+      <ul class="navul">
+        <li
+          class="navelements"
+          onclick="()=> {
+            document.querySelector('.hero').scrollIntoView({behavior: 'smooth'});
+        }"
+        >
+          Home
+        </li>
+        <li
+          class="navelements"
+          onclick="()=> {
+                document.querySelector('.about').scrollIntoView({behavior: 'smooth'});
+            }"
+        >
+          About
+        </li>
+        <li
+          class="navelements"
+          onclick="()=> {
+                    document.getElementsByClassName('.skills').scrollIntoView({behavior: 'smooth'});
+                }"
+        >
+          Skills
+        </li>
+        <li
+          class="navelements"
+          onclick="()=> {
+                        document.getElementsByClassName('.projects').scrollIntoView({behavior: 'smooth'});
+                    }"
+        >
+          Projects
+        </li>
+        <li
+          class="navelements"
+          onclick="()=> {
+                            document.getElementsByClassName('.contact').scrollIntoView({behavior: 'smooth'});
+                        }"
+        >
+          Contact
+        </li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <div class="herocontent">
+        <h1 class="herotitle">
+          Hi,I'm <br />
+          <span class="herospecialtitle">Rithwik Chimmani</span>
+        </h1>
+        <p class="herosubtitle">I'm a Web Developer</p>
+        <button class="herobutton">Hire Me</button>
+      </div>
+    </section>
+    <section class="about">
+      <div class="aboutcontent">
+        <h1 class="abouttitle">About Me</h1>
+        <br /><br />
+        <p>
+          Passionate about translating ideas into digital realities, I am a
+          React.js developer on an ever-evolving journey of learning and growth.
+        </p>
+        <br />
+        <h2>Beyond the Screen:</h2>
+        <p>
+          When not immersed in code, you'll find me strumming a melody on the
+          guitar or cheering passionately for my favorite football team. Life's
+          a blend of creativity, technology, and the beautiful game!
+        </p>
+        <br />
+        <h2>Mission:</h2>
+        <p>
+          My mission is to contribute innovative solutions to the web
+          development landscape, continuously learning and adapting to the
+          evolving digital frontier.
+        </p>
+        <br />
+        <h2>Join Me in the Journey:</h2>
+        <p>
+          Follow my updates for a blend of tech insights, creative endeavors,
+          and the occasional football cheer!
+        </p>
+      </div>
+      <div class="aboutimage"></div>
+    </section>
+    <section class="skills">
+      <h1 class="skillstitle">Skills</h1>
+      <div class="skillscontent">
+        <div class="left">
+          <div class="figmaimage"></div>
+          <div class="reduxjs"></div>
+        </div>
+        <div class="right">
+          <div class="upper">
+            <div class="upup">
+              <div class="nextjs"></div>
+              <div class="js"></div>
+            </div>
+            <div class="updwn">
+              <div class="flutter"></div>
+              <div class="reactjs"></div>
+            </div>
+          </div>
+          <div class="down">
+            <div class="spline"></div>
+            <div class="threejs"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects">
+      <h1 class="projectstitle">Projects</h1>
+      <div class="projectscontent">
+        <div class="card">
+          <div class="tools">
+            <div class="circle">
+              <span class="red box"></span>
+            </div>
+            <div class="circle">
+              <span class="yellow box"></span>
+            </div>
+            <div class="circle">
+              <span class="green box"></span>
+            </div>
+          </div>
+          <div class="card__content">
+            <h1>Law Connect India</h1>
+            <br />
+            <p>
+              Law Connect India is a platform that connects lawyers and clients,
+              providing a seamless experience for legal services.
+            </p>
+            <p>
+              Our Platform Onboards all types of legal service providers and
+              offers their Services to their clients . which helps client find
+              the right legal service provider according to their specifications
+              at the nearest location and connect with them through online.
+            </p>
+            <a href="https://devfolio.co/projects/lawconnectindia-73d6"
+              ><div class="lawconnectindia"></div
+            ></a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="tools">
+            <div class="circle">
+              <span class="red box"></span>
+            </div>
+            <div class="circle">
+              <span class="yellow box"></span>
+            </div>
+            <div class="circle">
+              <span class="green box"></span>
+            </div>
+          </div>
+          <div class="card__content">
+            <h1>EVault</h1>
+            <br />
+            <p>
+              Evault is Blockbased based website which is built for managing the
+              legal records.
+            </p>
+            <p>
+              It is a platform where the user can store their legal documents
+              and can access them from anywhere in the world.
+            </p>
+            <a href="https://devfolio.co/projects/evault-6a8e"
+              ><div class="evaultimage"></div
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <h1 class="contacttitle">Contact</h1>
+      <div class="contactcontent">
+        <div class="contactform">
+          <form class="form">
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              class="input"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              class="input"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Message"
+              class="input"
+              required
+            ></textarea>
+            <button class="submit">Submit</button>
+          </form>
+        </div>
+        <div class="contactinfo">
+          <h1>Get in Touch</h1>
+          <p>
+            <span class="bold">Email: rithwikchimmani3425@gmail.com</span>
+          </p>
+          <p>
+            <span class="bold">Phone: +91 8074586358</span>
+          </p>
+          <p>
+            <span class="bold">Address: Hanamakonda, Warangal, Telangana</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footercontent">
+        <p>&copy; 2021 Rithwik Chimmani. All Rights Reserved.</p>
+      </div>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/rithwikchimmani/" target="_blank"
+          ><i class="fa-brands fa-linkedin icon"></i
+        ></a>
+        <a href="https://x.com/Rithwik3425" target="_blank"
+          ><i class="fa-brands fa-twitter icon"></i
+        ></a>
+        <a href="https://www.instagram.com/rithwikchimmani/" target="_blank"
+          ><i class="fa-brands fa-instagram icon"></i
+        ></a>
+        <a href="https://github.com/Rithwik3425" target="_blank"
+          ><i class="fa-brands fa-github icon"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>
