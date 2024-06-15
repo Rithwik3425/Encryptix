@@ -54,7 +54,7 @@
 .hero {
   height: 100vh;
   width: 100%;
-  background: url("/Task_1/bg-image-2.jpg") no-repeat center center/cover;
+  background: url("/Landing Page/bg-image-2.jpg") no-repeat center center/cover;
   padding: 0px 60px;
   text-align: center;
   display: flex;
@@ -129,7 +129,7 @@
 .serviceimage {
   width: 500px;
   height: 500px;
-  background: url("/Task_1/image.png") no-repeat center center/cover;
+  background: url("/Landing Page/image.png") no-repeat center center/cover;
   border-radius: 20px;
 }
 
